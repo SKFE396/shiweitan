@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shiwei Tan is a Ph.D. student at Rutgers University working on trustworthy AI and foundation models.">
+  <title>Shiwei Tan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="home-link" href="#top">Shiwei Tan</a>
+      <nav aria-label="Page sections">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#service">Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell" id="main">
+    <section class="profile" id="top" aria-labelledby="name">
+      <img class="portrait" src="avatar.jpg" width="534" height="800" alt="Portrait of Shiwei Tan">
+      <div>
+        <h1 id="name">Shiwei Tan</h1>
+        <p class="affiliation">Computer Science Ph.D. student, Rutgers University</p>
+        <p>I am advised by Prof. Hao Wang. My research focuses on trustworthy AI, especially the reliability of language and vision-language models, self-improvement through feedback and post-training, and mechanistic interpretability.</p>
+        <ul class="profile-links" aria-label="Profile links">
+          <li><a href="https://www.linkedin.com/in/shiwei-tan-1793552b0">LinkedIn</a></li>
+          <!-- Add public CV, Google Scholar, and GitHub links as list items. -->
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Selected Research</h2>
+      <div class="research-list">
+        <article>
+          <h3><a href="#cce">Coder–Tester Co-Evolution (CCE)</a></h3>
+          <p>CCE jointly trains code and test generators on graded optimization tasks. Execution feedback guides the code generator, and rewards based on test reliability guide the test generator.</p>
+        </article>
+        <article>
+          <h3><a href="#coad">Causal Decoding (COAD)</a></h3>
+          <p>COAD uses causal decoding to reduce hallucinations in multimodal large language models and help ground their outputs in visual inputs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">Selected Publications &amp; Manuscripts</h2>
+      <ol class="publication-list">
+        <li id="cce">
+          <h3>Graded Execution Feedback for Co-Evolving Code and Test Generators</h3>
+          <p class="authors"><strong>Shiwei Tan</strong>, Zihao Xu, Qi Xu, Zhigang Hua, Luke Simon, Ziyan Wang, Hengguan Huang, Hao Wang</p>
+          <p class="venue under-review">Under review at ICLR 2027</p>
+        </li>
+        <li id="coad">
+          <h3>Causal Decoding for Hallucination-Resistant Multimodal Large Language Models</h3>
+          <p class="authors"><strong>Shiwei Tan</strong>, Hengyi Wang, Weiyi Qin, Qi Xu, Zhigang Hua, Hao Wang</p>
+          <p class="venue">Transactions on Machine Learning Research (TMLR), 2026</p>
+        </li>
+        <li>
+          <h3>Threshold-Aware Conformal Routing</h3>
+          <p class="authors"><strong>Shiwei Tan</strong>, Huzefa Rangwala, Danielle C. Maddix</p>
+          <p class="venue under-review">Under review at ICLR 2027</p>
+          <p class="paper-summary">Combines conformal prediction and decision-aware training to route inputs between fast surrogate models and expensive simulations with finite-sample risk guarantees.</p>
+        </li>
+        <li>
+          <h3>Overcoming the Curvature Bottleneck in MeanFlow</h3>
+          <p class="authors">Xinxi Zhang*, <strong>Shiwei Tan*</strong>, Quang Nguyen, Quan Dao, Ligong Han, Xiaoxiao He, Tunyu Zhang, Chengzhi Mao, Dimitris Metaxas, Vladimir Pavlovic</p>
+          <p class="venue under-review">Under review at ICLR 2027</p>
+          <p class="paper-summary">Studies the curvature bottleneck in MeanFlow and how to overcome it.</p>
+        </li>
+        <li>
+          <h3>Multimodal Needle in a Haystack: Benchmarking Long-Context Capability of Multimodal Large Language Models</h3>
+          <p class="authors">Hengyi Wang, Haizhou Shi, <strong>Shiwei Tan</strong>, Weiyi Qin, Wenyuan Wang, Tunyu Zhang, Akshay Nambi, Tanuja Ganu, Hao Wang</p>
+          <p class="venue">NAACL, 2025</p>
+          <p class="paper-summary">Benchmarks long-context capabilities in multimodal large language models.</p>
+        </li>
+        <li>
+          <h3>Variational Language Concepts for Interpreting Foundation Language Models</h3>
+          <p class="authors">Hengyi Wang, <strong>Shiwei Tan</strong>, Zhiqing Hong, Desheng Zhang, Hao Wang</p>
+          <p class="venue">EMNLP, 2024</p>
+          <p class="paper-summary">Studies variational language concepts as a tool for interpreting foundation language models.</p>
+        </li>
+        <li>
+          <h3>Probabilistic Conceptual Explainers: Trustworthy Conceptual Explanations for Vision Foundation Models</h3>
+          <p class="authors">Hengyi Wang*, <strong>Shiwei Tan*</strong>, Hao Wang</p>
+          <p class="venue">ICML, 2024</p>
+          <p class="paper-summary">Develops probabilistic conceptual explanations for vision foundation models.</p>
+        </li>
+      </ol>
+      <p class="note">* Equal contribution.</p>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Research &amp; Industry Experience</h2>
+      <div class="entry-list">
+        <article>
+          <div class="entry-heading">
+            <h3>Siemens · Applied AI / Machine Learning Intern</h3>
+            <p class="date">Jun–Aug 2026</p>
+          </div>
+          <p>Developed Threshold-Aware Conformal Routing for risk-controlled routing between surrogate models and expensive simulations.</p>
+        </article>
+        <article>
+          <div class="entry-heading">
+            <h3>Meta · Academic Collaborator / Research Advisor I</h3>
+            <p class="date">Oct 2025–May 2026</p>
+          </div>
+          <p>Researched Coder–Tester Co-Evolution and ways to reduce hallucinations and improve grounding in multimodal language models.</p>
+        </article>
+        <article>
+          <div class="entry-heading">
+            <h3>SenseTime · Junior Algorithm Researcher</h3>
+            <p class="date">Jul–Sep 2021</p>
+          </div>
+          <p>Improved video-based escalator tracking and post-processing, reducing false alarms from more than 20 per month to 2.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <div class="entry-list">
+        <article>
+          <div class="entry-heading">
+            <h3>Rutgers University</h3>
+            <p class="date">2023–Present</p>
+          </div>
+          <p>Ph.D. in Computer Science · Advisor: Prof. Hao Wang</p>
+        </article>
+        <article>
+          <div class="entry-heading">
+            <h3>Shanghai Jiao Tong University</h3>
+            <p class="date">2018–2022</p>
+          </div>
+          <p>B.S. in Software Engineering</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="service" aria-labelledby="service-title">
+      <h2 id="service-title">Academic Service</h2>
+      <p>Outstanding Reviewer, CVPR 2026</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">© 2026 Shiwei Tan</div>
+  </footer>
+</body>
+</html>

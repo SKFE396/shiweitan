@@ -1,0 +1,287 @@
+:root {
+  color-scheme: light;
+  --ink: #202733;
+  --muted: #515d6b;
+  --accent: #842635;
+  --line: #e0e3e7;
+  --surface: #f8f9fa;
+  --measure: 49rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font: 1rem/1.6 system-ui, sans-serif;
+  overflow-wrap: break-word;
+}
+
+.shell {
+  width: min(var(--measure), calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  inset: 0.5rem auto auto 0.5rem;
+  z-index: 1;
+  padding: 0.4rem 0.75rem;
+  background: #fff;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.95rem, 4vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin-bottom: 1.15rem;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner, nav, .profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.header-inner {
+  justify-content: space-between;
+  gap: 0.4rem 1.25rem;
+  padding-block: 0.9rem;
+}
+
+.home-link {
+  color: var(--ink);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+nav, .profile-links {
+  gap: 0.2rem 1.1rem;
+  font-size: 0.9rem;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.75rem;
+  align-items: start;
+  padding-block: 2.7rem 2.2rem;
+}
+
+.portrait {
+  grid-column: 2;
+  grid-row: 1;
+  display: block;
+  width: 8rem;
+  height: auto;
+  border-radius: 0.375rem;
+}
+
+.profile > div {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.affiliation {
+  margin-block: 0.4rem 0.8rem;
+  color: var(--muted);
+  font-weight: 550;
+}
+
+.profile-links {
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section {
+  border-top: 1px solid var(--line);
+  padding-block: 1.65rem 1.8rem;
+  scroll-margin-top: 1rem;
+}
+
+.research-list, .entry-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.research-list {
+  border-left: 2px solid var(--accent);
+  padding-left: 1rem;
+}
+
+.research-list p, .entry-list article > p {
+  margin-top: 0.2rem;
+}
+
+.publication-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.publication-list li {
+  padding-block: 0.8rem;
+  scroll-margin-top: 1rem;
+}
+
+.publication-list li:first-child {
+  padding-top: 0;
+}
+
+.publication-list li + li {
+  border-top: 1px solid var(--line);
+}
+
+.publication-list li:target {
+  background: var(--surface);
+}
+
+.authors, .venue, .date, .note, .site-footer {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.authors {
+  margin-top: 0.15rem;
+}
+
+.authors strong {
+  color: var(--ink);
+}
+
+.venue {
+  font-style: italic;
+}
+
+.under-review {
+  color: var(--accent);
+}
+
+.paper-summary {
+  margin-top: 0.2rem;
+}
+
+.note {
+  margin-top: 0.25rem;
+}
+
+.entry-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0 1rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding-block: 1.1rem;
+}
+
+@media (max-width: 36rem) {
+  .shell {
+    width: calc(100% - 2rem);
+  }
+
+  .header-inner {
+    flex-direction: column;
+  }
+
+  nav {
+    gap: 0.25rem 0.75rem;
+  }
+
+  nav a {
+    padding-block: 0.2rem;
+  }
+
+  .profile {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.85rem;
+    padding-block: 1.7rem;
+  }
+
+  .portrait, .profile > div {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .portrait {
+    width: 6rem;
+  }
+}
+
+@media print {
+  .site-header, .site-footer, .profile-links, .skip-link {
+    display: none;
+  }
+
+  .shell {
+    width: 100%;
+  }
+
+  .profile, .section {
+    padding-block: 1rem;
+  }
+
+  article, .publication-list li {
+    break-inside: avoid;
+  }
+}
